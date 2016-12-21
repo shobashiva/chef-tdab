@@ -1,0 +1,7 @@
+name             'chef-tdab'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures chef-tdab'
+long_description 'Installs/Configures chef-tdab'
+version          '0.1.0'
