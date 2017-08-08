@@ -26,22 +26,22 @@ $ vagrant plugin install vagrant-berkshelf
 $ vagrant plugin install vagrant-omnibus
 ```
 
-
-
 ## Attributes
 
 ## Usage
 
-### chef-tdab::default
-
-Include `chef-tdab` in your node's `run_list`:
+Install the requirements listed above.  Clone this repo so that both the Thinkster Django Angular Boilerplate and this repo are directly under the same parent folder.  The file structure so look like:
+```
+tree -L 1 .
+.
+├── chef-tdab
+└── <thinkster-django-angular-repo>
+```
+Change directories into chef-tdab then run vagrant up
 
 ```
-{
-  "run_list": [
-    "recipe[chef-tdab::default]"
-  ]
-}
+cd chef-tdab
+vagrant up
 ```
 
 ## License and Authors
