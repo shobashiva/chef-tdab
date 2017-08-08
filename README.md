@@ -1,27 +1,34 @@
 # chef-tdab-cookbook
 
-TODO: Enter the cookbook description here.
+Chef recipes that will get the Thinkster Django Angular tutorial up and running on Vagrant
 
-## Supported Platforms
+### Requirements
 
-TODO: List your supported platforms.
+#### ChefDK
+
+ChefDK includes several utilities for creating and managing chef
+resources.  To install it, navigate
+[here](https://docs.chef.io/install_dk.html#get-package-run-installer)
+and complete the ___Get Package, Run Installer___ and ___Set System
+Ruby___ sections.
+
+#### VirtualBox / Vagrant
+
+VirtualBox and Vagrant will provide you with a virtual machine to
+provision using this cookbook.  You can download VirtualBox
+[here](https://www.virtualbox.org/wiki/Downloads) and Vagrant
+[here](https://www.vagrantup.com/downloads.html).
+
+Once those are installed, install a couple of vagrant chef plugins:
+
+```bash
+$ vagrant plugin install vagrant-berkshelf
+$ vagrant plugin install vagrant-omnibus
+```
+
+
 
 ## Attributes
-
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['chef-tdab']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
 
 ## Usage
 
@@ -29,7 +36,7 @@ TODO: List your supported platforms.
 
 Include `chef-tdab` in your node's `run_list`:
 
-```json
+```
 {
   "run_list": [
     "recipe[chef-tdab::default]"
@@ -39,4 +46,4 @@ Include `chef-tdab` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: Shoba Gowda (<shobashiva17@gmail.com>)
